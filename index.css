@@ -1,0 +1,303 @@
+body{
+    margin: 0;
+    background: #1A1A2E;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+
+}
+header{
+    width: 100%;
+    display: flex;
+    height: 8vh;
+    background: rgb(1, 57, 82);
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1000;
+}
+.res .email{
+    text-decoration: none;
+    color: rgb(3, 128, 30);
+    font-weight: bolder;
+}
+.res .number{
+    text-decoration: none;
+    color: rgb(248, 4, 4);
+    font-weight: bolder;
+}
+
+.navLinks ul{
+    display: flex;
+    gap: 25px;
+
+
+}
+.navLinks ul li{
+    list-style-type: none;
+}
+.navLinks ul a{
+    text-decoration: none;
+    color: white;
+    
+}
+.navLinks a:hover{
+    color: red;
+    background: white;
+    border-radius: 5px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+#menu{
+    color: white;
+    font-size: 30px;
+    cursor: pointer ;
+    display: none;
+
+}
+@media(max-width: 568px) {
+    #menu{
+        display: block;
+
+}
+.navLinks {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    
+   
+}
+.navLinks ul{
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    background: rgba(1, 12, 3, 0.911);
+    position: absolute;
+    padding-top: 30px;
+    gap: 15px;
+    padding: 5px;
+    margin: 0;
+
+
+    
+}
+.navLinks.active{
+    display: flex;
+    left: 0;
+    z-index: 99;
+
+
+}
+.projet{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
+
+}
+header{
+    background: rgb(1, 79, 82);
+    border-bottom: 1px solid white;
+}
+
+
+.nom, h2{
+    font-size: 17px;
+}
+footer{
+    font-size: 10px;
+}
+
+    
+}
+
+.social{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+
+}
+.social a{
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 30px;
+
+    
+}
+.social .whatsapp{
+    color: rgb(2, 141, 2);
+}
+.linkedin{
+    color: blue;
+}
+#la{
+    display: flex;
+    height: 370px;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 10px;
+    
+
+}
+.logo{
+    color: rgb(255, 38, 0);
+    text-decoration: overline underline white 3px;
+    font-weight: bolder;
+    font-size: large;
+    
+
+}
+#apropos, #competences, #projets{
+    padding: 20px;
+}
+.ma{
+    width: 60%;
+    
+    
+}
+.nom{
+    color: blue;
+    font-weight: bolder;
+    display: inline-block;
+    border: 1px solid blue;
+    background: yellow;
+    border-radius: 3px;
+    box-shadow: 3px 3px 6px black;
+    animation: anime 4s ease forwards ;
+
+}
+@keyframes anime {
+    from{
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+
+  
+
+.profil{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: anim_profil 4.5s ease forwards;
+    
+}
+@keyframes anim_profil {
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+img{
+    width: 50px;
+    border: 1px solid rgb(229, 245, 5);
+}
+button{
+    background: red;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+.job{
+    color: tomato;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imgs{
+    width: 100%;
+    height: 370px;
+    border: solid  3px rgb(2, 81, 253);
+    border-radius: 10px;
+    background-image: url(./theo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+.imgs:hover{
+    border: 3px solid yellow;
+    transition: all 3s ease-out;
+
+}
+h3{
+    color: rgb(252, 215, 6);
+    animation: anim 2.5s ease forwards;
+    margin: 16px;
+}
+.comp{
+    color: rgb(240, 53, 6);
+    font-weight: bolder;
+
+}
+@keyframes anim {
+    from{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+     50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+.cv a{
+    text-decoration: none;
+    background: red;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bolder;
+}
+.cont{
+    background-color: rgb(7, 1, 36);
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow:  rgb(248, 250, 248) 1.5px 3px;
+}
+.conta{
+    background:#55012f;
+    padding: 5px;
+    border: solid 1px white ;
+    border-radius: 5px;
+}
+@media (min-width: 569px) {
+    .projet{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-bottom: 30px;
+        margin: 10px;
+    }
+    
+
+    
+}
+
+#contact{
+    margin-top: 30px;
+    padding: 20px;
+}
+footer{
+    display: flex;
+    background: black;
+    color: white;
+    justify-content: center;
+
+}
